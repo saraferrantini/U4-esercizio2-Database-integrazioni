@@ -127,6 +127,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
                     <h5 class="card-title"><?= $row['name'] ?></h5>
                     <h5 class="card-title"><?= $row['surname'] ?></h5>
                     <p class="card-text">ID: <?= $row['id'] ?></p>
+                     <!--pulsante di modifica -->
+                <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-primary">Modifica</a>
                 </div>
             </div>
         </div>
